@@ -1,0 +1,118 @@
+/* ------------- header -------------- */
+header nav {
+  font-family: 'GenesisSansHeadKRRegular', sans-serif;
+  background: black;
+  color: #bbbbbb;
+  padding: 0 14rem;
+  height: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+@media (max-width:1560px) {
+  header nav {
+    padding: 0 12rem;
+    font-size: 1.4rem;
+  }
+}
+
+header nav .logoAndMenuLeft,
+header nav .logoAndMenuLeft .menuLeft,
+header nav .menuRight,
+header nav .menuRight .letter {
+  display: flex;
+  align-items: center;
+}
+
+header nav .logoAndMenuLeft .logo img,
+header nav ul.menuLeft li {
+  margin-right: 5.8rem;
+}
+
+@media (max-width: 1560px) {
+  header nav .logoAndMenuLeft .logo img,
+  header nav ul.menuLeft li {
+    margin-right: 4rem;
+  }
+}
+
+header nav .menuRight ul li,
+header nav .menuRight .search {
+  margin-right: 3.5rem;
+}
+
+header nav ul li {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header nav .logoAndMenuLeft .logo {
+  height: 25px;
+}
+
+header nav .logoAndMenuLeft .logo img {
+  height: 100%;
+}  
+header nav ul li:hover,
+header nav i {
+  color: white;
+}
+
+header nav .menuRight .search {
+  position: relative;
+}
+
+header nav .menuRight .hide {
+  width: 260px;
+  position: absolute;
+  left: -267px;
+  top: -2px;
+  z-index:100000;
+  background: black;;
+  border-radius: 5px;
+  padding: 4px 7px;
+  display: none;
+}
+
+header nav .menuRight .hide li {
+  font-size: 1.5rem;
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  color: rgba(232, 198, 198, 0.7);
+  padding: 5px 2px;
+}
+
+@media (max-width:1560px) {
+  header nav .menuRight .hide li {
+    font-size: 1.4rem;
+  }
+}
+
+header nav .menuRight .hide li a {
+  cursor: pointer;
+}
+
+header nav .menuRight .hide input {
+  background: transparent;
+  padding: 0;
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+@media (max-width:1560px) {
+  header nav .menuRight .hide input {
+    font-size: 1.4rem;
+  }
+}
+
+
+header nav .menuRight .search:active .hide {
+  display: block;
+}

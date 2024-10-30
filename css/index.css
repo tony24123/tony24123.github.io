@@ -1,0 +1,1381 @@
+@import url(reset.css);
+
+@font-face {
+  font-family: 'GenesisSansHeadKRLight';
+  src: url('../font/GenesisSansHeadKRLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'GenesisSansTextKRRegular;';
+  src: url('../font/GenesisSansTextKRRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'GenesisSansHeadKRRegular';
+  src: url('../font/GenesisSansHeadKRRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+html {
+  font-size: 10px;
+}
+body .wrap{
+  background-color: black;
+  color: #fff;
+  line-height: 1.2;
+  position: relative;
+}
+body header {
+  background: #111;
+  border-bottom: 1px solid #1e1e1e;
+  width: 100%;
+  height: 69px;
+  padding: 0 128px;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  z-index: 999999999;
+}
+body header .site-navi-bar {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+body header .site-navi-bar .logo {
+  width: 8%;
+  
+}
+body header .site-navi-bar .logo img {
+  width: 100%;
+}
+
+body header .site-navi-bar .main-navi-bar {
+ 
+  width: 75%;
+}
+body header .site-navi-bar .main-navi-bar .main-navi-bar-list {
+  display: flex;
+  flex-direction: row;
+  color: #bbb;
+}
+body header .site-navi-bar .main-navi-bar .main-navi-bar-list li {
+  margin-left: 48px;
+}
+
+body header .site-navi-bar .sub-navi-bar {
+  
+  width: 17%;  
+  
+}
+
+body header .site-navi-bar .sub-navi-bar .sub-navi-bar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #bbb;
+}
+
+body header a:hover{
+  color: #fff;
+}
+
+main {
+  display: block;
+}
+main .top-padding {
+  background-origin: padding-box;
+  padding-bottom: 12rem;
+  padding-top: 6.9rem;
+}
+main .top-padding .top-visual {
+  /* border: 4px solid orange; */
+  background: darkblue;
+  width: 100%;
+  height: -webkit-calc(100vh - 69px);
+  height: calc(100vh - 6.9rem);
+  position: relative;
+}
+main .top-padding .top-visual::after {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 50%;
+  height: 6.2rem;
+  width: 33.8rem;
+  border-top: 3px solid #fff;
+  border-bottom:3px solid #fff;
+  transform: translateY(-50%);
+
+}
+main .top-padding .top-visual .top-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 750px;
+  /* border: 2px solid blue; */
+  background: url("https://www.genesis.com/content/dam/genesis-p2/kr/assets/main/hero/genesis-kr-main-key-visual-gv80-24fl-desktop-2560x900.jpg")
+    no-repeat center/cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+main .top-padding .top-visual .top-img::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  opacity: 0.35;
+  width: 100%;
+  height: 20%;
+  /* border: 3px red solid; */
+}
+main .top-padding .top-visual .top-txt {
+  font-family: 'GenesisSansHeadKRLight', sans-serif;
+  width: 100%;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 8.1%;
+  padding: 0 33.8rem;
+  /* border: 1px solid yellow; */
+  font-weight: 400;
+  font-size: 22px;
+}
+main .top-padding .top-visual .top-txt .top-txt-co {
+  width: 100%;
+  font-size: 2.6rem;
+  /* border: 1px solid #fff; */
+  display: block;
+}
+main .top-padding .top-visual .top-txt .top-txt-mo {
+  width: 100%;
+  font-size: 80px;
+  /* border: 1px solid #fff; */
+  display: block;
+}
+
+main .top-padding .top-visual .bottom-txt {
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  color: #fff;
+  display: flex;
+  position: absolute;
+  bottom: 21.8%;
+  left: 33.8rem;
+  /* border: 1px solid yellow; */
+  font-weight: 400;
+  font-size: 16px;
+}
+main
+  .top-padding
+  .top-visual
+  .bottom-txt
+  .bottom-txt-wrap
+  .bottom-txt-quo:first-child {
+  margin: 0 0 0 6rem;
+}
+
+main .top-padding .top-visual .bottom-txt .bottom-txt-wrap .bottom-txt-list{
+  position: relative;
+}
+main .top-padding .top-visual .bottom-txt .bottom-txt-wrap .bottom-txt-list::before {
+  content: "";
+  background: #fff;
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.4rem;
+  transition : all 0.4s ease-out;
+}
+main .top-padding .top-visual .bottom-txt .bottom-txt-wrap:hover .bottom-txt-list::before {
+  width: 100%;
+}
+main .top-padding .top-visual .bottom-txt .bottom-txt-wrap:not(:hover) .bottom-txt-list::before {
+  width: 0;
+  transition: none; 
+}
+main .top-padding .top-visual .top-bullet-btn {
+  display: flex;
+  /* border: pink 1px solid; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 400%);
+}
+main .top-padding .top-visual .top-bullet-btn .bullet-padding {
+  padding: 0.4rem;
+  margin: 0 0.4rem;
+
+  .bullet {
+    text-indent: -9999px;
+    border: #111 solid 2px;
+    background: #777;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .bullet:hover {
+    color: #000;
+    border-color: #fff;
+  }
+}
+
+/* top-visual style end */
+/* ======================================================== */
+
+/* model-visual style */
+
+main .model-padding {
+  background-origin: padding-box;
+  padding: 8rem 0 16rem;
+}
+main .model-padding .model-visual {
+  /* border: 4px solid orange; */
+  width: 100%;
+  position: relative;
+  padding: 0 14rem;
+}
+main .model-padding .model-visual .mo-title {
+  display: inline-block;
+  color: #fff;
+}
+main .model-padding .model-visual .mo-title {
+  padding: 0 0 0 19.8rem;
+  .mo-txt-mo {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: 'GenesisSansHeadKRLight', sans-serif;
+  }
+  .mo-txt-desc {
+    font-size: 16px;
+    margin-top: 1.6rem;
+    font-family: 'GenesisSansTextKRRegular', sans-serif;
+  }
+}
+main .model-padding .model-visual .mo-category-select {
+  /* border: 1px solid #fff; */
+}
+main .model-padding .model-visual .mo-category-select .select-list-wrap {
+  margin: 2.5rem 0 2.5rem 19.8rem;
+}
+main
+  .model-padding
+  .model-visual
+  .mo-category-select
+  .select-list-wrap
+  #select-list {
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  width: 30rem;
+  text-transform: uppercase;
+  background: black;
+  color: #fff;
+  border-style: none;
+  border-bottom: 1px #fff solid;
+  padding: 1.1rem 2.1rem 1rem 1rem;
+  flex: 16;
+  option {
+    font-size: 14px;
+    color: gray;
+  }
+}
+main .model-padding .model-visual .mo-category {
+  margin-top: 9.3rem;
+  padding-left: 19.8rem;
+  /* border: 1px greenyellow solid; */
+}
+
+main .model-padding .model-visual .mo-category .mo-category-item {
+  height: auto;
+  padding: 0 2rem;
+  padding-bottom: 5.6rem;
+  display: flex;
+  justify-content: start;
+}
+main
+  .model-padding
+  .model-visual
+  .mo-category
+  .mo-category-item
+  .item-list-wrap {
+  font-family: 'GenesisSansHeadKRLight', sans-serif;
+  /* border: skyblue 1px solid; */
+  padding: 3.7rem 4rem 4.9rem;
+  width: calc(100% / 3);
+  margin: 0 2rem;
+  transition: color 3s ease;
+  position: relative;
+}
+main
+  .model-padding
+  .model-visual
+  .mo-category
+  .mo-category-item
+  .item-list-wrap:hover {
+    border: #262626 1px solid;
+  }
+main .model-padding .model-visual .mo-category .mo-category-item .item-list {
+  /* border: 1px solid red; */
+  display: block;
+  .list-name {
+    color: #bbb;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+  }
+}
+main .model-padding .model-visual .mo-category .mo-category-item:hover .item-list .list-name{
+    color :#fff;
+}
+main
+  .model-padding
+  .model-visual
+  .mo-category
+  .mo-category-item
+  .item-list
+  .img-holder {
+  margin-top: 4.3rem;
+  img {
+    width: 100%;
+  }
+}
+main
+  .model-padding
+  .model-visual
+  .mo-category
+  .mo-category-item
+  .item-list
+  .mo-category-button {
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  margin-top: 4rem;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 5.6rem;
+  transition: all 0.5s ease;
+  span {
+    font-size: 16px;
+  }
+}
+main
+  .model-padding
+  .model-visual
+  .mo-category
+  .mo-category-item
+  .item-list-wrap:hover
+  .item-list
+  .mo-category-button {
+    color: #000;
+    background-color: #fff;
+    transform: translateY(-10px);
+  }
+
+main .model-padding .model-visual .mo-category .mo-bullet-btn {
+  display: flex;
+  /* border: pink 1px solid; */
+  justify-content: center;
+  align-items: center;
+}
+main .model-padding .model-visual .mo-category .mo-bullet-btn .bullet-padding {
+  padding: 0.4rem;
+  margin: 0 0.4rem;
+  .bullet {
+    text-indent: -9999px;
+    border: #111 solid 2px;
+    background: #777;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    z-index: 100;
+  }
+  .bullet:hover {
+    border: #fff solid 2px;
+    background: #111;
+  }
+}
+
+/* icon-visual style */
+
+main .icon-padding {
+  background-origin: padding-box;
+  padding-bottom: 12rem;
+}
+main .icon-visual {
+  padding: 12.5rem 0;
+  /* border: 4px solid orange; */
+  width: 100%;
+}
+main .icon-visual .link-inner {
+  padding: 0 14rem;
+  /* border: 1px solid pink; */
+}
+main .icon-visual .link-inner .link-item-list {
+  padding: 0 -2rem;
+  /* border: 1px solid yellow; */
+}
+main .icon-visual .link-inner .link-item-list .item-list-icon {
+  /* border: 1px solid orange; */
+  display: flex;
+  justify-content: center;
+}
+main .icon-visual .link-inner .link-item-list .item-list-icon .icon-item {
+  width: 20%;
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.8rem 7rem 2.4rem;
+}
+main .icon-visual .link-inner .link-item-list .item-list-icon .icon-item img {
+  width: 6rem;
+  height: 6rem;
+}
+main .icon-visual .link-inner .link-item-list .item-list-icon .icon-item span {
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  font-size: 16px;
+  margin-top: 2.7rem;
+}
+
+/* awards-visual style */
+main .awards-padding {
+  background-origin: padding-box;
+  padding-bottom: 24rem;
+}
+main .awards-padding .awards-visual {
+  background: url("https://www.genesis.com/content/dam/genesis-p2/kr/assets/main/awards/20240703/genesis-main-reddot-awards-2024-best-of-awards-neolun-concept-660x396.jpg")
+    no-repeat center/cover;
+  background-size: 130%;
+}
+main .awards-visual .aw-txt {
+  font-family: 'GenesisSansHeadKRLight', sans-serif;
+  padding: 5.3rem 0 0 33.8rem;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+main .awards-visual .awards-list {
+  padding: 4.9rem 0 9.6rem;
+  display: flex;
+  justify-content: center;
+}
+main .awards-visual .awards-list .awards-item {
+  display: inline-block;
+  width: 66rem;
+}
+main .awards-visual .awards-list .awards-item img {
+  width: 100%;
+}
+
+main .awards-visual .awards-list .awards-item .aw-span-wrap {
+  font-family: 'GenesisSansHeadKRLight', sans-serif;
+  min-height: 32.3rem;
+  background: #111;
+  padding: 4rem 4rem 0;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  justify-content: top;
+  align-items: start;
+  position: relative;
+
+  .aw-item-title {
+    display: block;
+    font-size: 18px;
+    margin: 0 0 2.1rem;
+  }
+  .aw-item-sub {
+    display: block;
+    font-size: 26px;
+    margin: 0 0 2.1rem;
+  }
+  .aw-item-desc {
+    font-family: 'GenesisSansTextKRRegular', sans-serif;
+    display: block;
+    font-size: 14px;
+  }
+}
+main .awards-visual .awards-list .awards-item .aw-span-wrap .aw-item-look-wrap {
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+
+  .aw-item-look {
+    padding-right: 0.5rem;
+  }
+}
+main
+  .awards-visual
+  .awards-list
+  .awards-item
+  .aw-span-wrap
+  .aw-item-look-wrap
+  span {
+  min-height: 7rem;
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+main
+  .awards-visual
+  .awards-list
+  .awards-item
+  .aw-span-wrap
+  .aw-item-look-wrap
+  .aw-item-look::before {
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.4rem;
+}
+main .awards-visual
+.awards-list
+.awards-item
+.aw-span-wrap
+.aw-item-look-wrap:hover .aw-item-look::before {
+  animation: show 0.4s forwards;
+}
+
+/* awards-visual style end */
+
+/* space-visual style */
+main .space-padding {
+  background-origin: padding-box;
+  padding-bottom: 24rem;
+}
+main .space-visual .space-list {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .space-visual .space-list .space-item {
+  height: 52.4rem;
+  /* border: 3px solid yellowgreen; */
+  width: 50%;
+  background: url("https://www.genesis.com/content/dam/genesis-p2/kr/assets/main/genesis-kr-main-space-15-desktop-960x540-ko.jpg")
+    center/cover no-repeat;
+  position: relative;
+  padding: 5.1rem 36rem 5.1rem 6rem;
+}
+main .space-visual .space-list .space-item.roadtrip {
+  background: url("https://www.genesis.com/content/dam/genesis-p2/kr/assets/main/genesis-kr-main-road-trip-16-desktop-960%20x%20540-ko.jpg")
+    center/cover no-repeat;
+  margin-left: 4rem;
+}
+main .space-visual .space-list .space-item::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #111;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .space-visual .space-list .space-item .space-item-padding {
+  position: relative;
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  .space-title {
+    font-family: 'GenesisSansHeadKRLight', sans-serif;
+    font-size: 42px;
+  }
+  .space-sub {
+    font-size: 14px;
+    margin-top: 1.4rem;
+  }
+  .space-look-wrap {
+    font-size: 16px;
+    margin-top: 1.6rem;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+  }
+}
+main
+  .space-visual
+  .space-list
+  .space-item
+  .space-item-padding
+  .space-look-wrap
+  .space-look {
+  position: relative;
+  /* border: 1px solid blue; */
+}
+
+main
+  .space-visual
+  .space-list
+  .space-item
+  .space-item-padding
+  .space-look-wrap:hover .space-look::before {
+  animation: show 0.4s forwards;
+}
+main
+  .space-visual
+  .space-list
+  .space-item
+  .space-item-padding
+  .space-look-wrap
+  .space-look::before {
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.4rem;
+}
+
+
+/* space style end */
+
+/* event style */
+main .event-padding {
+  background-origin: padding-box;
+  padding-bottom: 24rem;
+}
+
+main .event-padding .event-visual {
+  position: relative;
+}
+main .event-padding .event-visual .event-img {
+  height: 50vw;
+  background: url("https://www.genesis.com/content/dam/genesis-p2/kr/assets/main/genesis-kr-main-genesis-events-17-desktop-1920x960-ko-4.jpg")
+    center/cover no-repeat;
+}
+main .event-padding .event-visual .event-item {
+  margin: 0 14rem;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-family: 'GenesisSansHeadKRLight', sans-serif;
+
+  .event-title {
+    font-size: 54px;
+    margin-bottom: 4.1rem;
+  }
+  .event-sub {
+    font-size: 26px;
+    margin: 4.8rem 0 1.6rem;
+  }
+}
+main .event-padding .event-visual .event-item .event-link {
+  font-size: 16px;
+  margin-top: 4.3rem;
+  height: 5.6rem;
+  width: fit-content;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  .event-link-txt {
+    font-family: 'GenesisSansTextKRRegular', sans-serif;
+    padding: 0 4rem;
+    width: 24rem;
+    z-index: 100;
+  }
+}
+main .event-padding .event-visual .event-item .event-link::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top:0;
+  left: 0;
+  background: #fff;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  z-index: 5;
+}
+main .event-padding .event-visual .event-item:hover .event-link::before{
+  color: #000;
+  transform-origin:  0% 50%;
+  width: 100%;
+}
+main .event-padding .event-visual .event-item:hover{
+  .event-link-txt{
+    color: #000;
+  }
+}
+/* 이거 해야함 */
+main .event-padding .event-visual .event-item:not(:hover) .event-link::before{
+  opacity: 0;
+  transition: width 0ms ease-in-out .75s,opacity .75s 0ms;
+}
+/* event style end  */
+
+/* related style */
+main .related-padding {
+  background: #fff;
+  color: #000;
+  padding: 12rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .related-padding .related-visual {
+  width: 100%;
+  font-family: 'GenesisSansHeadKRLight', sans-serif;
+}
+main .related-padding .related-visual .related-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 3.8rem;
+}
+main .related-padding .related-visual .related-list-wrap {
+  padding: 0 14rem;
+  height: 46.7rem;
+}
+main .related-padding .related-visual .related-list-wrap .related-list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 -4rem;
+}
+main .related-padding .related-visual .related-list-wrap .related-item {
+  width: 33.3%;
+  /* border: 1px solid orange; */
+  padding-left: 4rem;
+  height: 100%;
+}
+main .related-padding .related-visual .related-list .related-item .related-img {
+  height: 33rem;
+  border: #000 1px solid;
+}
+main
+  .related-padding
+  .related-visual
+  .related-list
+  .related-event
+  .related-img {
+  background: url("https://www.genesis.com/content/dam/genesis-p2/kr/assets/common/related-contents/banner/genesis-related-contents-banner-event-pc-mo-630x404-kr.jpg")
+    center/cover;
+}
+main
+  .related-padding
+  .related-visual
+  .related-list
+  .related-members
+  .related-img {
+  background: url("https://www.genesis.com/content/dam/genesis-p2/kr/assets/common/related-contents/banner/genesis-related-contents-banner-members-desktop-630x404-kr.jpg")
+    center/cover;
+}
+main
+  .related-padding
+  .related-visual
+  .related-list
+  .related-myapp
+  .related-img {
+  background: url("https://www.genesis.com/content/dam/genesis-p2/kr/assets/common/related-contents/banner/genesis-kr-related-contents-my-genesis-app-desktop-630x404-ko.jpg")
+    center/cover;
+}
+main
+  .related-padding
+  .related-visual
+  .related-list
+  .related-item
+  .rel-span-wrap {
+  margin: 2.6rem 0 0;
+  display: block;
+  position: relative;
+  flex-grow: 1;
+  font-family: 'GenesisSansHeadKRLight', sans-serif;
+
+  .related-sub {
+    font-size: 18px;
+  }
+  .related-desc {
+    font-size: 16px;
+    margin: 1.5rem 0 0;
+  }
+}
+main
+  .related-padding
+  .related-visual
+  .related-list
+  .related-item
+  .rel-span-wrap
+  .rel-look-wrap {
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  display: block;
+  font-size: 16px;
+  margin: 1.8rem 0 0;
+}
+main
+  .related-padding
+  .related-visual
+  .related-list
+  .related-item
+  .rel-span-wrap
+  .rel-look-wrap
+  .related-look {
+  position: relative;
+}
+.related-padding
+.related-visual
+.related-list
+.related-item
+.rel-span-wrap
+.rel-look-wrap:hover .related-look::before {
+  animation: show 0.4s forwards;
+}
+main
+  .related-padding
+  .related-visual
+  .related-list
+  .related-item
+  .rel-span-wrap
+  .rel-look-wrap
+  .related-look::before {
+  content: "";
+  background: #111;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+}
+
+.wrap .chatbot-fixed .chatbot-icon-holder{
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  z-index: 500;
+}
+
+@keyframes show{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+/* main style end */
+
+
+/* footer style */
+
+footer {
+  color: white;
+}
+
+footer .footer_top .share {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 15px 140px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width:1560px) {
+  footer .footer_top .share {
+    padding: 15px 120px;
+  }
+}
+footer .footer_top .share .left, 
+footer .footer_top .share .right {
+  display: flex;
+}
+
+footer .footer_top .share ul.left li {
+  color: #808080;
+  width: 1.6rem;
+  margin-right: 2.6rem;
+  height: 2rem;
+}
+
+footer .footer_top .share ul.left li a i,
+footer .footer_top .share div.left li .letter span {
+  font-size: 1.6rem;
+  display: block;
+}
+
+footer .footer_top .share ul.left li a i.light {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer_top .share ul.left li a:hover i.light {
+  color: rgba(255, 255, 255, 1);
+}
+
+footer .footer_top .share div.left .letter span {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.8rem;
+  margin-right: 1.6rem;
+}
+
+@media (max-width:1560px) {
+  footer .footer_top .share div.left .letter span {
+    font-size: 14px;
+    line-height: 1.6rem;
+  }
+}
+
+footer .footer_top .share .right {
+  font-family: 'GenesisSansHeadKRRegular', sans-serif;
+  font-size: 16px;
+  line-height: 1.8rem;
+  letter-spacing: 1.4px;
+  text-align: center;
+  margin-right: 10px;
+  background: transparent;
+  border: 0px solid #000;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+@media (max-width:1560px) {
+  footer .footer_top .share .right {
+    font-size: 14px;
+    line-height: 1.6rem;
+  }
+}
+
+footer .footer_top .share .right::after {
+  background-image: url("https://www.genesis.com/etc.clientlibs/genesis-p2/global/clientlibs/clientlib-basepage/resources/images/w-ico-arrow-top.png");
+  background-repeat: no-repeat;
+  content: '';
+  width: 50%;
+  height: 40%;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+footer .footer_top .notice {
+  padding: 0 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 140px;
+  background: black;
+  font-size: 1.6rem;
+  font-family:'GenesisSansTextKRRegular', sans-serif;
+}
+
+@media (max-width:1560px) {
+  footer .footer_top .notice {
+    padding: 30px 120px;
+  }
+}
+
+footer .footer_top .notice .content a p.no2 {
+  display: none;
+}
+
+footer .footer_top .notice .navigationbar button {
+  background: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  font-size: 1px;
+}
+
+footer .footer_top .notice .navigationbar button.no1::after {
+  content:'';
+  width: 12px;
+  height: 12px;
+  background: no-repeat url('https://www.genesis.com/etc.clientlibs/genesis-p2/global/clientlibs/clientlib-basepage/resources/images/ico-arrow-white.png');
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  z-index: 1000;
+} 
+
+footer .footer_top .notice .navigationbar button.no2::after {
+  content:'';
+  width: 12px;
+  height: 12px;
+  background: no-repeat url('https://www.genesis.com/etc.clientlibs/genesis-p2/global/clientlibs/clientlib-basepage/resources/images/ico-pause-white-type2.png');
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  z-index: 1000;
+} 
+
+footer .footer_top .notice .navigationbar button.no3::after {
+  content:'';
+  width: 12px;
+  height: 12px;
+  background: no-repeat url('https://www.genesis.com/etc.clientlibs/genesis-p2/global/clientlibs/clientlib-basepage/resources/images/ico-arrow-white.png');
+  background-size: contain;
+  transform: scalex(-1); /*좌우반전*/
+  position: absolute;
+  right: 0;
+  top: 4px;
+  z-index: 1000;
+} 
+
+footer .footer_top .notice {
+  padding: 0 140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 140px;
+  background: black;
+  font-size: 1.6rem;
+  font-family:'GenesisSansTextKRRegular', sans-serif;
+}
+
+footer .footer_bottom {
+  background: black;
+}
+
+footer .footer_bottom .row_top {
+  padding: 0 140px 9.2rem;
+  background: #151515;
+} 
+
+@media (max-width: 1560px) {
+  footer .footer_bottom .row_top {
+    padding: 0 120px 9.2rem;
+  }
+}
+
+footer .footer_bottom .row_top .up,
+footer .footer_bottom .row_top .down {
+  display: flex;
+}
+
+footer .footer_bottom .row_top .menu {
+  width: 25%;
+  padding-top: 7.4rem;
+}
+
+footer .footer_bottom .row_top .menu p {
+  font-family: 'GenesisSansHeadKRRegular', sans-serif;
+  font-size: 1.6rem;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_top .menu p {
+    font-size: 1.4rem;
+  }
+}
+
+footer .footer_bottom .row_top .menu ul li {
+  margin-top: 2.8rem;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_top .menu ul li {
+    margin-top: 2.5rem;
+  }
+}
+
+
+footer .footer_bottom .row_top .menu ul li a {
+  font-family: 'GenesisSansTextKRRegular', sans-serif;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_top .menu ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+footer .footer_bottom .row_top .menu ul li a:hover {
+  color: white;
+}
+
+footer .footer_bottom .row_middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 140px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1560px) {
+  footer .footer_bottom .row_middle {
+    padding: 2.4rem 120px;
+  }
+}
+
+footer .footer_bottom .row_middle ul {
+  display: flex;
+}
+
+footer .footer_bottom .row_middle ul.legal-notices li {
+  margin-right: 4.8rem;
+  position: relative;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_middle ul.legal-notices li {
+    margin-right: 4rem;
+  }
+}
+
+footer .footer_bottom .row_middle ul.legal-notices li::after {
+  content:'';
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  right: -2.4rem;
+  z-index: 10000;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_middle ul.legal-notices li::after {
+    right: -2rem;
+  }
+}
+
+footer .footer_bottom .row_middle ul.legal-notices li:last-child::after {
+  width: 0;
+}
+
+footer .footer_bottom .row_middle ul.legal-notices li:nth-child(3) {
+  color: #c36f51;
+}
+
+footer .footer_bottom .row_middle ul.legal-notices li {
+  font-size: 1.4rem;
+  color: #bbb;
+}
+
+footer .footer_bottom .row_middle ul.legal-notices li:hover {
+  color: white;
+}
+
+footer .footer_bottom .row_middle ul.legal-notices li:nth-child(3):hover {
+  color: rgba(255, 52, 52, 1)
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_middle ul.legal-notices li a {
+    font-size: 1.2rem;
+  }
+}
+footer .footer_bottom .row_middle ul.social-media li {
+  width: 42px;
+  height: 42px;
+}
+
+footer .footer_bottom .row_middle ul.social-media li:nth-child(2) {
+  margin-right: 9px;
+}
+
+footer .footer_bottom .row_middle ul.social-media li a {
+  display: inline-block; /* a는 인라인 요소임 */
+  width: 100%;
+  height: 100%;
+  font-family: 'GenesisSansTextKRRegular;', sans-serif;
+}
+
+footer .footer_bottom .row_middle ul.social-media li a i {
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer_bottom .row_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.2rem 14rem 3.2rem 16rem;
+  border-bottom: 1px solid #1e1e1e;
+  border-top: 1px solid 1px #1e1e1e;
+  font-size: 1.4rem;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_bottom {
+    font-size: 1.2rem;
+    padding: 3.2rem 12rem 3.2rem 14rem;
+  }
+}
+
+footer .footer_bottom .row_bottom ul {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_bottom ul {
+   width: 50%;
+  }
+}
+
+footer .footer_bottom .row_bottom ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 4.6rem;
+} 
+
+footer .footer_bottom .row_bottom ul li a:hover {
+  color: white;
+}
+
+footer .footer_bottom .row_bottom ul li {
+  position: relative;
+  justify-content: flex-start;;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_bottom ul li {
+    margin-bottom: 20px;
+  }
+}
+
+footer .footer_bottom .row_bottom ul li.no1::after {
+  content:'';
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url('https://www.genesis.com/etc.clientlibs/genesis-p2/global/clientlibs/clientlib-basepage/resources/images/ico-worldwide.png');
+  background-size: contain;
+  position: absolute;
+  left: -20px;
+  z-index:50;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_bottom ul li::after {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+footer .footer_bottom .row_bottom ul li.no2::after {
+  content:'';
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url('https://www.genesis.com/etc.clientlibs/genesis-p2/global/clientlibs/clientlib-basepage/resources/images/ico-privacy-center.png');
+  background-size: contain;
+  position: absolute;
+  left: -20px;
+  z-index:50;
+}
+
+footer .footer_bottom .row_bottom ul li.no3::after {
+  content:'';
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url('https://www.genesis.com/etc.clientlibs/genesis-p2/global/clientlibs/clientlib-basepage/resources/images/ico-new-window.png');
+  background-size: contain;
+  position: absolute;
+  left: -20px;
+  z-index:50000000;
+}
+
+footer .footer_bottom .row_bottom .language {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer_bottom .row_bottom .language button {
+  padding: 20px 16px;
+  height: 50%;
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+@media (max-width:1560px) {
+  footer .footer_bottom .row_bottom .language button {
+    padding: 11px 14px;
+  }
+}
+
+footer .footer_bottom .row_bottom .language button.no1 {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+footer .footer_bottom .row_bottom .language button.no2 {
+  background: white;
+  color: black;
+} 
+
+footer .copyrights {
+  background: black;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  position: relative;
+}
+
+@media (max-width:1560px) {
+  footer .copyrights {
+    padding: 5.5rem 12rem;
+  }
+}
+
+footer .copyrights .logoContainer .logoImage {
+  width: 14.3rem;
+  margin: 0 auto 13px;
+}
+
+footer .copyrights .logoContainer .logoImage img{
+  width: 100%;
+}
+
+footer .copyrights .logoContainer p {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 20px;
+  color: #bbb;
+}
+
+footer .copyrights .isoContainer {
+  position: absolute;
+  right: 14rem;
+  top: 15%;
+}
+
+@media (max-width:1560px) {
+  footer .copyrights .isoContainer {
+    right: 12rem;
+  }
+}
